@@ -64,7 +64,7 @@ class SDK
      */
     public function sendMessage(string $instance, string $number, string $message, array $options = [])
     {
-        $number = $number . '@s.whatsapp.net';
+        //$number = $number . '@s.whatsapp.net';
         try {
             $output = $this->httpclient->request(
                 'POST',
@@ -76,6 +76,7 @@ class SDK
                         'textMessage' => [
                             'text' => $message
                         ],
+                        'text' => $message,
                         'options' => $options
                     ]
                 ]
