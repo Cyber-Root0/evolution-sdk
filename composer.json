@@ -16,6 +16,6 @@
         }
     },
     "require": {
-        "guzzlehttp/guzzle": "*"
+        "guzzlehttp/guzzle": "7.8.1"
     }
 }
